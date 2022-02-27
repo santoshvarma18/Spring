@@ -22,4 +22,22 @@ public class HelloWorldController {
     public String processForm(){
         return "helloworld";
     }
+
+    // add a new controller method to read from data and add data to the model
+    @RequestMapping("/processFormVersionTwo")
+    public String letsShoutDude(HttpServletRequest request, Model model){
+
+        // read the request parameter from the HTML form
+        String theName = request.getParameter("studentName");
+
+        theName = theName.toUpperCase(Locale.ROOT);
+
+        String result = "Yo! " + theName;
+
+        model.addAttribute("message", result);
+
+
+        return "helloworld";
+
+    }
 }
