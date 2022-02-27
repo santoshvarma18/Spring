@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Locale;
 
 @Controller
+@RequestMapping("/hello")
 public class HelloWorldController {
 
     // need a controller method to show the initial HTML form
@@ -36,7 +37,7 @@ public class HelloWorldController {
         String result = "Yo! " + theName;
 
         model.addAttribute("message", result);
-        
+
         return "helloworld";
 
     }
