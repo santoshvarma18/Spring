@@ -28,6 +28,15 @@
 
     <br><br>
 
+    Favourite Language:
+
+    Java <form:radiobutton path="favouriteLanguage" value = "Java" />
+    Python <form:radiobutton path="favouriteLanguage" value = "Python" />
+    Scala <form:radiobutton path="favouriteLanguage" value = "Scala" />
+    R <form:radiobutton path="favouriteLanguage" value = "R" />
+
+    <br><br>
+
     <input type = "submit" value = "Submit" />
 
     </form:form>
