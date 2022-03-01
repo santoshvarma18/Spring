@@ -41,6 +41,10 @@ public class CustomerController {
 
         boolean thereAreErrors = theBindingResult.hasErrors();
 
+        System.out.println("Binding results: "+thereAreErrors);
+
+        System.out.println("\n\n\n\n");
+
         // to test whitespaces
         System.out.println("Last name: |" + theCustomer.getLastName() + "|");
 
